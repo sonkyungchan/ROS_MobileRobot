@@ -1,0 +1,7 @@
+Kinect xyz = 0.3825 0 0.51769 
+
+Lidar xyz = 0 0 0.64269
+
+vehicle_controller/src/vehicle_controller.cpp 파일에서
+
+wheel_separation_a 값을 0.220 으로 변경

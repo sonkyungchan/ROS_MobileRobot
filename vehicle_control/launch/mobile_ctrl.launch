@@ -1,0 +1,31 @@
+<launch>
+
+  <group ns="controller_group">
+    <node pkg="vehicle_control" 
+          type="cmd_publish" 
+          name="cmd_pub"/>
+  
+    <node pkg="vehicle_control"
+          type="vehicle_controller"
+          name="control"/>
+  </group>
+
+
+    <node pkg="vehicle_control"
+          type="encoder_node"
+          name="encoder"/>
+
+    <node pkg="vehicle_control"
+          type="motor_dynamics"
+          name="motor_dynamics"/>
+<!--
+    <node pkg="vehicle_control"
+          type="kalman_comb"
+          name="kalman_v2"/>
+-->
+<!--
+  <node pkg="kalman_filter"
+        type="kalman_v1.py"
+        name="kalman_node"/>
+-->
+</launch>
